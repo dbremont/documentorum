@@ -104,6 +104,16 @@ SUM:                                 13486         514593         746514        
 | **Command-line Control Utility (`control.sh`)**                  | CLI tool for managing and inspecting cluster state.                                                              | Operator diagnostics and recovery.                  | Run `control.sh --baseline` or `control.sh --cache` etc.                                               |
 | **Third-party Monitoring Integrations**                          | Works with Prometheus, Grafana, Elastic Stack, etc., via exporters or JMX bridges.                               | Production monitoring and visualization.            | Deploy Prometheus JMX exporter or Elastic Beat for Ignite.                                             |
 
+## Case Study
+
+### Real-time Risk Analytics
+
+> Used Ignite as an in-memory compute grid for running Monte Carlo simulations on portfolios, reducing calculation times from hours to minutes.
+
+### Fraud Detection
+
+> Leveraged Ignite’s distributed cache + compute grid to process millions of transactions per second with low latency.
+
 ## Terminology
 
 - **SPI**:  Service Provider Interface.

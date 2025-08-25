@@ -1,10 +1,8 @@
 # Apache Ignite
 
 > **Apache Ignite** is an open-source, distributed in-memory computing platform designed for high-performance data storage, caching, and processing, providing features such as data grid, compute grid, and advanced analytics to support scalable and fast application performance.
-> 
 
 > The **Apache Ignite Deployment Model** supports various configurations, including standalone, cloud-based, and hybrid setups, enabling flexibility in scaling, distributing, and managing in-memory data and compute resources across different environments.
-> 
 
 | Feature | Description |
 | --- | --- |
@@ -113,6 +111,10 @@ SUM:                                 13486         514593         746514        
 ### Fraud Detection
 
 > Leveraged Ignite’s distributed cache + compute grid to process millions of transactions per second with low latency.
+
+## Related Systems
+
+> ...
 
 ## Terminology
 

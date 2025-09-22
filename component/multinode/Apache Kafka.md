@@ -52,3 +52,5 @@ QA:
 - On Track with Apache Kafka – Building a Streaming ETL Solution with Rail Data
 [https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data/](https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data/)
 - [Cluster Management](https://www.notion.so/Cluster-Management-1afc0f5171ec8033bcd4c92a01099126?pvs=21)
+- [Kafka Fundamentals: Getting Started with Distributed Messaging](https://substack.com/inbox/post/173521922)
+- 

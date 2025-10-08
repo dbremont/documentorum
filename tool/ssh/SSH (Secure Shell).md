@@ -153,6 +153,20 @@ There are three primary types of SSH tunneling:
 
 SSH tunneling is a powerful technique that enhances security and enables secure access to resources in various scenarios, such as accessing databases, web services, or internal network resources, as well as bypassing censorship and maintaining privacy when using public Wi-Fi networks. However, it’s essential to use SSH tunneling responsibly and in compliance with applicable laws and policies.
 
+## SSH Environment Variables
+
+| Variable                              | Description                                                                                    | Notes                                                  |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `SSH_AUTH_SOCK`                       | Path to the **ssh-agent** socket. SSH uses this to authenticate with keys loaded in the agent. | Set by `ssh-agent` automatically                       |
+| `SSH_AGENT_PID`                       | PID of the running **ssh-agent** process.                                                      | Set by `ssh-agent`                                     |
+| `SSH_CLIENT`                          | Contains the client IP, client port, and server port for the current SSH connection.           | Example: `192.168.1.5 54321 22`                        |
+| `SSH_CONNECTION`                      | Contains client IP, client port, server IP, server port.                                       | Example: `192.168.1.5 54321 192.168.1.100 22`          |
+| `SSH_TTY`                             | The path to the **terminal device** for the SSH session.                                       | Useful for terminal-aware scripts                      |
+| `SSH_ASKPASS`                         | Program SSH uses to ask for a password or passphrase if no terminal is available.              |                                                        |
+| `SSH_KEY_PATH` (custom, not standard) | Sometimes used in scripts to specify a key; not built-in.                                      |                                                        |
+| `GIT_SSH_COMMAND`                     | When using Git over SSH, allows overriding the SSH command.                                    | Example: `GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_work"` |
+| `SSH_OPTIONS` (custom)                | Rarely used; some scripts let you pass options via env variable.                               |                                                        |
+
 ## References
 
 - Ylonen, Tatu. “SSH–secure login connections over the Internet.” Proceedings of the 6th USENIX Security Symposium. Vol. 37. 1996.

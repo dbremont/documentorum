@@ -3,6 +3,44 @@
 > uv is a Rust-implemented, content-addressable, multi-layer dependency management and environment execution system for Python, providing deterministic resolution, reproducible isolation, and high-performance caching across Python environments and package ecosystems.
 uv is a Rust-implemented, content-addressable, multi-layer dependency management and environment execution system for Python, providing deterministic resolution, reproducible isolation, and high-performance caching across Python environments and package ecosystems.>
 
+## Quick Guide
+
+```bash
+## Install UX
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+## Show uv version
+uv version
+
+## Initialize a new Python project
+uv init
+
+## Add a dependency to the project
+uv add <dependency>
+
+## Remove a dependency from the project
+uv remove <dependency>
+
+## Synchronize the project environment with lockfile
+uv sync
+
+## Generate or update the lockfile
+uv lock
+
+## Show the project dependency tree
+uv tree
+
+## Run a command or script in the project environment
+uv run <command|script>
+
+## Build the project (wheel, sdist, etc.)
+uv build
+
+## Install a CLI tool persistently
+uv tool install <tool>
+```
+
+
 ## Formulation
 
 | **Aspect**                | **Description**                                                                                                                                                                                                                                    |
@@ -71,6 +109,46 @@ uv is a Rust-implemented, content-addressable, multi-layer dependency management
 |                               | `asdf`            | Universal version manager                         | Handles Python and other language runtimes                         |
 | **Security**                  | `bandit`          | Security linter                                   | Detects common security issues in code                             |
 |                               | `safety`          | Vulnerability checker                             | Checks dependencies for known CVEs                                 |
+
+## Toolbox
+
+| **Category**                        | **Command**                   | **Description**                                                      |                                                         |
+| ----------------------------------- | ----------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------- |
+| **Core Commands**                   | `uv version`                  | Show the current version of uv.                                      |                                                         |
+|                                     | `uv init`                     | Initialize a new Python project (creates project skeleton).          |                                                         |
+|                                     | `uv add <dependency>`         | Add a dependency to your project.                                    |                                                         |
+|                                     | `uv remove <dependency>`      | Remove a dependency from the project.                                |                                                         |
+|                                     | `uv sync`                     | Synchronize your project environment to match lockfile/dependencies. |                                                         |
+|                                     | `uv lock`                     | Generate or update the lockfile for your project.                    |                                                         |
+|                                     | `uv export`                   | Export your lockfile into another format.                            |                                                         |
+|                                     | `uv tree`                     | Show the dependency tree for the project.                            |                                                         |
+|                                     | `uv run <command              | script>`                                                             | Run a command or script within the project environment. |
+|                                     | `uv build`                    | Build the project (wheel, sdist, etc.).                              |                                                         |
+|                                     | `uv publish`                  | Publish the built package to a package index (e.g., PyPI).           |                                                         |
+| **CLI-tool Management**      | `uvx <tool>`                  | Run a tool in a temporary isolated environment.                      |                                                         |
+|                                     | `uv tool install <tool>`      | Install a tool persistently (user-wide).                             |                                                         |
+|                                     | `uv tool run <tool>`          | Run a tool explicitly (similar to uvx).                              |                                                         |
+|                                     | `uv tool upgrade <tool>`      | Upgrade an installed tool.                                           |                                                         |
+|                                     | `uv tool list`                | List all tools installed via uv.                                     |                                                         |
+|                                     | `uv tool uninstall <tool>`    | Uninstall a previously installed tool.                               |                                                         |
+|                                     | `uv tool update-shell`        | Update shell environment so tool executables are on PATH.            |                                                         |
+|                                     | `uv tool dir`                 | Show directory where uv stores tool environments.                    |                                                         |
+| **Python Version & Environment**    | `uv python install <version>` | Install specific Python versions.                                    |                                                         |
+|                                     | `uv python pin <version>`     | Pin the project to a specific Python version.                        |                                                         |
+|                                     | `uv venv --python <version>`  | Create a virtual environment with a specific Python version.         |                                                         |
+| **Pip-compatibility & Lower-level** | `uv pip install <package>`    | Install package(s) into current environment.                         |                                                         |
+|                                     | `uv pip show <package>`       | Show details of installed package.                                   |                                                         |
+|                                     | `uv pip list`                 | List installed packages.                                             |                                                         |
+|                                     | `uv pip uninstall <package>`  | Uninstall a package.                                                 |                                                         |
+|                                     | `uv pip freeze`               | List installed packages in freeze format.                            |                                                         |
+|                                     | `uv pip tree`                 | Show dependency tree of installed packages.                          |                                                         |
+|                                     | `uv pip compile`              | Compile a requirements/lockfile from dependencies.                   |                                                         |
+|                                     | `uv pip sync`                 | Sync virtual environment to match lockfile/dependencies.             |                                                         |
+| **Cache & Utility**                 | `uv cache dir`                | Show uv cache directory.                                             |                                                         |
+|                                     | `uv cache clean`              | Clear uv cache.                                                      |                                                         |
+|                                     | `uv cache prune`              | Remove outdated cache entries.                                       |                                                         |
+|                                     | `uv self update`              | Update uv itself to the latest version.                              |                                                         |
+
 
 ## QA
 

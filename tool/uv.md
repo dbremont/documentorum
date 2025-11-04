@@ -38,6 +38,9 @@ uv build
 
 ## Install a CLI tool persistently
 uv tool install <tool>
+
+## ...
+uv add -r requirements.txt  
 ```
 
 

@@ -1,9 +1,8 @@
 # LevelDB
 
 > **LevelDB** is a fast **key-value** storage library written at Google that provides an ordered mapping from string keys to string values. It is based on concepts from Google's Big Table database system, and its architecture is designed for high performance and efficiency.
-> 
 
-### Use Cases
+## Use Cases
 
 LevelDB is suitable for applications requiring high write throughput and efficient read performance. It is commonly used in scenarios such as:
 
@@ -143,11 +142,7 @@ Here is a table summarizing the performance considerations in LevelDB:
 ## References
 
 - [https://dbdb.io/db/leveldb](https://dbdb.io/db/leveldb)
-
-[Skip List](https://www.notion.so/Skip-List-926856edf43a4ab195c455b29fb05592?pvs=21)
-
-[LSM Tree](https://www.notion.so/LSM-Tree-771df20cad82477582adf82a73d55506?pvs=21)
-
-[Data Maps (Index)](https://www.notion.so/Data-Maps-Index-a836dc7cad624785ae39d9299df894b1?pvs=21)
-
-[Augmented Data Structures](https://www.notion.so/Augmented-Data-Structures-b6ba73a0edf1463184bbbf6c1cc0f0f6?pvs=21)
+- [Skip List](https://www.notion.so/Skip-List-926856edf43a4ab195c455b29fb05592?pvs=21)
+- [LSM Tree](https://www.notion.so/LSM-Tree-771df20cad82477582adf82a73d55506?pvs=21)
+- [Data Maps (Index)](https://www.notion.so/Data-Maps-Index-a836dc7cad624785ae39d9299df894b1?pvs=21)
+- [Augmented Data Structures](https://www.notion.so/Augmented-Data-Structures-b6ba73a0edf1463184bbbf6c1cc0f0f6?pvs=21)

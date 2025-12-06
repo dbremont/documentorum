@@ -22,3 +22,4 @@
 ## References
 
 - [Firefox](https://en.wikipedia.org/wiki/Firefox)
+- [A Guide To  Vimium](https://righteous-guardian-68f.notion.site/A-Guide-To-Vimium-6f362cf9f8494f0a9167a2a774bdae01?source=copy_link)

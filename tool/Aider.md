@@ -1,5 +1,11 @@
 # Aider
 
+> This is a horrible docs - improved:
+
+TODO:
+
+- [ ] What is computational complexity of Aider? Memory - Storage - CPU - GPU?
+
 - [ ]  https://aider.chat/
 - [ ]  https://openrouter.ai/docs/quickstart
 

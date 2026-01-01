@@ -24,3 +24,4 @@ curl -X POST https://robust-manually-flounder.ngrok-free.app/api/pull -d '{ "nam
 - https://github.com/ollama/ollama
 - https://platform.openai.com/docs/api-reference/introduction
 - https://github.com/ollama/ollama/blob/main/docs/api.md
+- https://github.com/ggml-org/llama.cpp

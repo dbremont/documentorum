@@ -264,3 +264,4 @@ CREATE INDEX idx_hash ON table_name USING <Index Tiype> (column_name);
 - https://news.ycombinator.com/item?id=26211895
 - [The **LLVM** Compiler Infrastructure](https://www.notion.so/The-LLVM-Compiler-Infrastructure-63fef44f698d4912b814c9bc5436da28?pvs=21)
 - https://www.orioledb.com/blog/orioledb-neon-differences
+- https://dlt.github.io/blog/posts/introduction-to-postgresql-indexes/

@@ -1,12 +1,13 @@
 # Wildfly
 
 > …
-> 
 
-## Java Options
+## Configuration File(s)
 
 ```csharp
-ls bin/standalone.conf
+- ls bin/standalone.sh
+- ls bin/standalone.conf
+- ls standalone/configuration/standalone.xml
 ```
 
 ## References

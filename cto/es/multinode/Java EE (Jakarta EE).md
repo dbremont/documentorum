@@ -3,7 +3,7 @@
 > Java EE (Jakarta EE) is a specification-driven, enterprise-grade Java platform that defines a set of standardized APIs, runtime environments, and container-managed services for building distributed, scalable, and transactional applications, leveraging a component-based architecture with servlets, JSP, JSF, CDI, EJB, JPA, JMS, JTA, and web services (REST and SOAP) while enforcing dependency injection, declarative security, and multi-threaded request processing within managed execution environments such as application servers (e.g., WildFly, Payara, or **Tomcat with EE extensions**).
 > 
 
-| **Category** | **Technology/Specification** | **Description** |
+| **Category** | **Specification** | **Description** |
 | --- | --- | --- |
 | **Web Tier** | **Jakarta Servlet** | Handles HTTP requests and responses, providing the foundation for web applications. |
 |  | **Jakarta Server Pages** |  |

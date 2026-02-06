@@ -14,6 +14,7 @@
 
 ```bash
 ./bin/add-user.sh
+./bin/add-user.sh -u admin -p NEW_PASSWORD
 ```
 
 ## References

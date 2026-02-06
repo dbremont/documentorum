@@ -74,6 +74,7 @@ QA:
 - How partial updates works?
 - What is the execution model?
 - How `DemuxCompositeELResolver` works?
+- What is the different between `Jakarta EE Server` vs `Application Server`?
 
 Phases:
 

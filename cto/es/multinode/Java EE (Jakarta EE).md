@@ -90,6 +90,10 @@ Expression Language (EL):
 
 - …
 
+## QA
+
+- How does WildFly determine which **JSP** file to serve for a given **URL**, and where must the **JSP** be located inside the **WAR**?
+
 ## References
 
 - https://github.com/weld/core [weld/core]

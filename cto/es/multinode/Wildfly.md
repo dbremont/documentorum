@@ -12,9 +12,9 @@
 
 ## Admin User
 
-`bash
+```bash
 ./bin/add-user.sh
-`
+```
 
 ## References
 

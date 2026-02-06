@@ -10,6 +10,12 @@
 - ls standalone/configuration/standalone.xml
 ```
 
+## Admin User
+
+`bash
+./bin/add-user.sh
+`
+
 ## References
 
 - [WildFly](https://www.wildfly.org/)

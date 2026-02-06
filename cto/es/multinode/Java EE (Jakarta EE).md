@@ -35,32 +35,33 @@
 
 ## Implementation
 
-| **Jakarta EE Specification** | **Implementation** | **Provider** |
-| --- | --- | --- |
-| **Jakarta Servlet** | Apache Tomcat / Jetty | Apache Software Foundation |
-| **Jakarta Server Pages (JSP)** | Jasper | Apache Software Foundation |
-| **Jakarta Faces (JSF)** | Mojarra / MyFaces | Eclipse / Apache |
-| **Jakarta Expression Language (EL)** | Eclipse EL | Eclipse Foundation |
-| **Jakarta RESTful Web Services (JAX-RS)** | RESTEasy / Jersey / CXF | JBoss / Eclipse / Apache |
-| **Jakarta XML Web Services (JAX-WS)** | Metro / CXF | Eclipse / Apache |
-| **Jakarta JSON Processing (JSON-P)** | Eclipse JSON-P | Eclipse Foundation |
-| **Jakarta JSON Binding (JSON-B)** | Eclipse Yasson | Eclipse Foundation |
-| **Jakarta Persistence (JPA)** | Hibernate / EclipseLink | Red Hat / Eclipse |
-| **Jakarta Data** | Eclipse JNoSQL (early) | Eclipse Foundation |
-| **Jakarta Messaging (JMS)** | Apache ActiveMQ / Artemis | Apache / Red Hat |
-| **Jakarta Batch** | Eclipse Batch | Eclipse Foundation |
-| **Jakarta Mail** | Eclipse Angus | Eclipse Foundation |
-| **Jakarta Concurrency** | Eclipse Concurrency | Eclipse Foundation |
-| **Jakarta Enterprise Beans (EJB)** | OpenEJB / WildFly EJB | Apache / Red Hat |
-| **Jakarta CDI (Contexts and Dependency Injection)** | Weld / OpenWebBeans | Red Hat / Apache |
-| **Jakarta Interceptors** | Provided by CDI Implementation | Various |
-| **Jakarta Security** | Soteria | Eclipse Foundation |
-| **Jakarta Transactions (JTA)** | Narayana / Geronimo | Red Hat / Apache |
-| **Jakarta Connectors (JCA)** | IronJacamar | Red Hat |
-| **Jakarta Annotations** | Eclipse Annotations | Eclipse Foundation |
-| **Jakarta Config** | SmallRye Config | Red Hat |
-| **Jakarta MVC** | Ozark | Eclipse Foundation |
-| **Jakarta Bean Validation** | Hibernate Validator | Red Hat |
+| **Jakarta EE Specification**                        | **Implementation**             | **Provider**               | **Application Server Support**                          |
+| --------------------------------------------------- | ------------------------------ | -------------------------- | ------------------------------------------------------- |
+| **Jakarta Servlet**                                 | Apache Tomcat / Jetty          | Apache Software Foundation | Tomcat, Jetty, WildFly, Payara, GlassFish, Open Liberty |
+| **Jakarta Server Pages (JSP)**                      | Jasper                         | Apache Software Foundation | Tomcat, WildFly, Payara, GlassFish, Open Liberty        |
+| **Jakarta Faces (JSF)**                             | Mojarra / MyFaces              | Eclipse / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Expression Language (EL)**                | Eclipse EL                     | Eclipse Foundation         | Tomcat, WildFly, Payara, GlassFish, Open Liberty        |
+| **Jakarta RESTful Web Services (JAX-RS)**           | RESTEasy / Jersey / CXF        | JBoss / Eclipse / Apache   | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta XML Web Services (JAX-WS)**               | Metro / CXF                    | Eclipse / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta JSON Processing (JSON-P)**                | Eclipse JSON-P                 | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta JSON Binding (JSON-B)**                   | Eclipse Yasson                 | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Persistence (JPA)**                       | Hibernate / EclipseLink        | Red Hat / Eclipse          | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Data**                                    | Eclipse JNoSQL (early)         | Eclipse Foundation         | *Emerging* (experimental in EE servers)                 |
+| **Jakarta Messaging (JMS)**                         | Apache ActiveMQ / Artemis      | Apache / Red Hat           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Batch**                                   | Eclipse Batch                  | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Mail**                                    | Eclipse Angus                  | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Concurrency**                             | Eclipse Concurrency            | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Enterprise Beans (EJB)**                  | OpenEJB / WildFly EJB          | Apache / Red Hat           | WildFly, Payara, GlassFish                              |
+| **Jakarta CDI (Contexts and Dependency Injection)** | Weld / OpenWebBeans            | Red Hat / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Interceptors**                            | Provided by CDI implementation | Various                    | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Security**                                | Soteria                        | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Transactions (JTA)**                      | Narayana / Geronimo            | Red Hat / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Connectors (JCA)**                        | IronJacamar                    | Red Hat                    | WildFly, Payara, GlassFish                              |
+| **Jakarta Annotations**                             | Eclipse Annotations            | Eclipse Foundation         | Tomcat, WildFly, Payara, GlassFish, Open Liberty        |
+| **Jakarta Config**                                  | SmallRye Config                | Red Hat                    | WildFly, Payara, Open Liberty                           |
+| **Jakarta MVC**                                     | Ozark                          | Eclipse Foundation         | WildFly, Payara, GlassFish                              |
+| **Jakarta Bean Validation**                         | Hibernate Validator            | Red Hat                    | Tomcat, WildFly, Payara, GlassFish, Open Liberty        |
+
 
 ## **Jakarta Faces**
 
@@ -92,10 +93,11 @@ Expression Language (EL):
 ## References
 
 - https://github.com/weld/core [weld/core]
-- https://github.com/csiglab/web-frameworks-labs
 - https://en.wikipedia.org/wiki/Jakarta_EE
 - https://jakarta.ee/specifications/faces/3.0/jsdoc/jsf.ajax.html
 - https://stackoverflow.com/questions/7295096/what-exactly-is-java-ee
 - https://jakarta.ee/specifications/
+- [distributed-system-lab](https://github.com/dbremont/distributed-system-lab)
 - [Java: Modularization](https://righteous-guardian-68f.notion.site/Java-Modularization-210c0f5171ec809b8108ee6acba4db9c?source=copy_link)
 - [What is the difference between application server and web server?](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server?rq=3)
+- [Wildfly](https://github.com/dbremont/documentorum/blob/main/cto/es/multinode/Wildfly.md)

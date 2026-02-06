@@ -97,3 +97,5 @@ Expression Language (EL):
 - https://jakarta.ee/specifications/faces/3.0/jsdoc/jsf.ajax.html
 - https://stackoverflow.com/questions/7295096/what-exactly-is-java-ee
 - https://jakarta.ee/specifications/
+- [Java: Modularization](https://righteous-guardian-68f.notion.site/Java-Modularization-210c0f5171ec809b8108ee6acba4db9c?source=copy_link)
+- [What is the difference between application server and web server?](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server?rq=3)

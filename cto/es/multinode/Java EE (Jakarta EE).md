@@ -1,7 +1,6 @@
 # Java EE (Jakarta EE)
 
 > Java EE (Jakarta EE) is a specification-driven, enterprise-grade Java platform that defines a set of standardized APIs, runtime environments, and container-managed services for building distributed, scalable, and transactional applications, leveraging a component-based architecture with servlets, JSP, JSF, CDI, EJB, JPA, JMS, JTA, and web services (REST and SOAP) while enforcing dependency injection, declarative security, and multi-threaded request processing within managed execution environments such as application servers (e.g., WildFly, Payara, or **Tomcat with EE extensions**).
-> 
 
 | **Category** | **Specification** | **Description** |
 | --- | --- | --- |
@@ -53,7 +52,9 @@
 | **Jakarta Concurrency**                             | Eclipse Concurrency            | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
 | **Jakarta Enterprise Beans (EJB)**                  | OpenEJB / WildFly EJB          | Apache / Red Hat           | WildFly, Payara, GlassFish                              |
 | **Jakarta CDI (Contexts and Dependency Injection)** | Weld / OpenWebBeans            | Red Hat / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Dependency Injection**                    | Integrated with CDI            | Various                    | WildFly, Payara, GlassFish, Open Liberty                |
 | **Jakarta Interceptors**                            | Provided by CDI implementation | Various                    | WildFly, Payara, GlassFish, Open Liberty                |
+| **Jakarta Naming (JNDI)**                           | Container-provided             | Various                    | Tomcat*, WildFly, Payara, GlassFish, Open Liberty       |
 | **Jakarta Security**                                | Soteria                        | Eclipse Foundation         | WildFly, Payara, GlassFish, Open Liberty                |
 | **Jakarta Transactions (JTA)**                      | Narayana / Geronimo            | Red Hat / Apache           | WildFly, Payara, GlassFish, Open Liberty                |
 | **Jakarta Connectors (JCA)**                        | IronJacamar                    | Red Hat                    | WildFly, Payara, GlassFish                              |
@@ -61,7 +62,6 @@
 | **Jakarta Config**                                  | SmallRye Config                | Red Hat                    | WildFly, Payara, Open Liberty                           |
 | **Jakarta MVC**                                     | Ozark                          | Eclipse Foundation         | WildFly, Payara, GlassFish                              |
 | **Jakarta Bean Validation**                         | Hibernate Validator            | Red Hat                    | Tomcat, WildFly, Payara, GlassFish, Open Liberty        |
-
 
 ## **Jakarta Faces**
 

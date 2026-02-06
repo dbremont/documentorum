@@ -2,35 +2,33 @@
 
 > Java EE (Jakarta EE) is a specification-driven, enterprise-grade Java platform that defines a set of standardized APIs, runtime environments, and container-managed services for building distributed, scalable, and transactional applications, leveraging a component-based architecture with servlets, JSP, JSF, CDI, EJB, JPA, JMS, JTA, and web services (REST and SOAP) while enforcing dependency injection, declarative security, and multi-threaded request processing within managed execution environments such as application servers (e.g., WildFly, Payara, or **Tomcat with EE extensions**).
 
-| **Category** | **Specification** | **Description** |
-| --- | --- | --- |
-| **Web Tier** | **Jakarta Servlet** | Handles HTTP requests and responses, providing the foundation for web applications. |
-|  | **Jakarta Server Pages** |  |
-|  | **Jakarta Faces** | Simplifies building user interfaces for web applications (formerly JSF - JavaServer Faces). |
-|  | **Jakarta Expression Language (EL)** | Provides a simple language for accessing and manipulating object properties in Java-based web apps. |
-| **Web Services** | **Jakarta RESTful Web Services (JAX-RS)** | Simplifies development of REST APIs. |
-|  | **Jakarta XML Web Services (JAX-WS)** | Enables SOAP-based web service development. |
-|  | **Jakarta JSON Processing (JSON-P)** | Provides APIs for parsing, generating, and manipulating JSON data. |
-|  | **Jakarta JSON Binding (JSON-B)** | Provides APIs for mapping Java objects to JSON and vice versa. |
-| **Persistence** | **Jakarta Persistence (JPA)** | Simplifies database interaction by providing ORM (Object-Relational Mapping) functionality. |
-|  | **Jakarta Data** | A newer addition to Jakarta EE, offering a more streamlined API for accessing relational databases. |
-| **Enterprise Integration** | **Jakarta Messaging (JMS)** | Enables asynchronous communication via messaging systems. |
-|  | **Jakarta Batch** | Supports batch processing of large data sets. |
-|  | **Jakarta Mail** | Provides APIs for sending and receiving emails. |
-|  | **Jakarta Concurrency** | Enables multithreaded programming in enterprise applications. |
-| **Business Logic** | **Jakarta Enterprise Beans (EJB)** | Simplifies transactional and distributed business logic development. |
-|  | **Jakarta CDI (Contexts and Dependency Injection)** | Provides a dependency injection framework for simplifying object management. |
-|  | **Jakarta Interceptors** | Allows cross-cutting concerns (e.g., logging, auditing) to be handled via interceptors. |
-| **Security** | **Jakarta Security** | Provides APIs for application-level security (authentication, authorization, etc.). |
-| **Transaction Management** | **Jakarta Transactions (JTA)** | Enables transaction management for enterprise applications. |
-|  | **Jakarta Connectors (JCA)** | Provides integration with enterprise information systems like ERPs and legacy systems. |
-| **Configuration** | **Jakarta Annotations** | Provides standard annotations to simplify metadata-driven development. |
-|  | **Jakarta Dependency Injection (DI)** | Ensures loose coupling between components through DI principles. |
-| **Cloud & Microservices** | **Jakarta Config** | Offers centralized and dynamic configuration for microservices and cloud apps. |
-|  | **Jakarta MVC** | A model-view-controller framework for building web apps (optional). |
-|  | **Jakarta JSON Binding (JSON-B)** | Works well with cloud-native and microservices architectures for JSON data manipulation. |
-| **Testing** | **Jakarta Bean Validation** | Ensures data integrity via annotations for bean validation. |
-|  |  |  |
+| **Category**               | **Specification**                                   | **Description**                                                                                         |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Web Tier**               | **Jakarta Servlet**                                 | Defines the core HTTP request/response programming model and lifecycle for web applications.            |
+|                            | **Jakarta Server Pages (JSP)**                      | Provides a server-side view technology for generating dynamic HTML using Java and tag libraries.        |
+|                            | **Jakarta Faces (JSF)**                             | Component-based UI framework for building server-rendered web user interfaces.                          |
+|                            | **Jakarta Expression Language (EL)**                | Unified expression language for accessing and manipulating application data in web views and templates. |
+| **Web Services**           | **Jakarta RESTful Web Services (JAX-RS)**           | Defines a standard API for building RESTful HTTP-based services.                                        |
+|                            | **Jakarta XML Web Services (JAX-WS)**               | Defines APIs and annotations for SOAP-based web services.                                               |
+|                            | **Jakarta JSON Processing (JSON-P)**                | Low-level streaming and object-model APIs for parsing and generating JSON.                              |
+|                            | **Jakarta JSON Binding (JSON-B)**                   | High-level API for mapping Java objects to and from JSON representations.                               |
+| **Persistence**            | **Jakarta Persistence (JPA)**                       | Standard ORM API for managing relational data using entity-based object mapping.                        |
+|                            | **Jakarta Data**                                    | Repository-style abstraction for simplified and declarative data access (still evolving).               |
+| **Enterprise Integration** | **Jakarta Messaging (JMS)**                         | Messaging API for asynchronous, reliable, and decoupled communication between components.               |
+|                            | **Jakarta Batch**                                   | Defines a job-oriented model for offline, bulk, and long-running batch processing.                      |
+|                            | **Jakarta Mail**                                    | APIs for composing, sending, and receiving email messages.                                              |
+|                            | **Jakarta Concurrency**                             | Managed concurrency utilities for executing asynchronous and scheduled tasks in containers.             |
+| **Business Logic**         | **Jakarta Enterprise Beans (EJB)**                  | Component model for transactional, secure, and distributed business logic.                              |
+|                            | **Jakarta CDI (Contexts and Dependency Injection)** | Context-aware dependency injection framework with scopes, lifecycle management, and events.             |
+|                            | **Jakarta Interceptors**                            | Mechanism for implementing cross-cutting concerns (logging, security, metrics) via interception.        |
+| **Security**               | **Jakarta Security**                                | Standardized APIs for authentication, authorization, and identity management integration.               |
+| **Transaction Management** | **Jakarta Transactions (JTA)**                      | Defines APIs for demarcating and coordinating distributed transactions.                                 |
+|                            | **Jakarta Connectors (JCA)**                        | Architecture for integrating Jakarta EE applications with external enterprise information systems.      |
+| **Configuration & Naming** | **Jakarta Annotations**                             | Common annotations used across Jakarta EE for declarative configuration and metadata.                   |
+|                            | **Jakarta Dependency Injection (DI)**               | Base dependency injection contract defining injection points and resolution semantics.                  |
+|                            | **Jakarta Naming (JNDI)**                           | Naming and directory API for binding and looking up resources in a hierarchical namespace.              |
+| **Web & MVC (Optional)**   | **Jakarta MVC**                                     | Action-based MVC framework layered on top of JAX-RS for server-side web applications.                   |
+| **Validation**             | **Jakarta Bean Validation**                         | Declarative validation framework using constraints and annotations to enforce data integrity.           |
 
 ## Implementation
 

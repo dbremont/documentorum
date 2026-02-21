@@ -57,6 +57,14 @@
 > Plugins: Extend Vue's functionality with reusable plugins for tasks like validation or analytics.
 > 
 
+
+## Guiding Questions
+
+- What is the technical nature of Vue? Is it a production framework, a constitutive platform, or something else?
+- How should the implementation of Vue be characterized?
+- What technical production tools does Vue offer?
+- What are the constitutive technical elements it provides?
+
 ## References
 
 - https://vuejs.org/
@@ -64,3 +72,4 @@
 - https://vuejs.org/glossary/ [Glossary]
 - https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3
 - https://news.ycombinator.com/item?id=17466400
+- https://github.com/dbremont/distributed-system-lab

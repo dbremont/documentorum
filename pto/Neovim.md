@@ -1,5 +1,6 @@
 > The VIM Editing Model is a modal and keyboard-centric approach to text editing, emphasizing efficient navigation, manipulation of text objects, and a wide range of single-key and multi-key commands for tasks like insertion, deletion, and text transformation.
-> 
+
+> How to study (represent) neovim from  'a praxis' angle?
 
 ## Index
 

@@ -2,7 +2,7 @@
 
 > An overlay network client that establishes outbound, encrypted control and data channels to Cloudflare’s edge, enabling private services to be exposed without inbound firewall openings.
 
-> Cloudflared is not a tunnel ...
+> Cloudflared is not a tunnel - well yes (it's  a overlay - outbound connection enabler tool) - but it also offerts tunelling.
 
 ## Characterization
 

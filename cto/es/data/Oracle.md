@@ -31,7 +31,22 @@ DBMS Random https://stackoverflow.com/questions/1568630/generating-random-number
 
 ## QA
 
-- What is an schema in oracle
+### What do we mean by an Schema in Oracle? What is the different with Scheme in other database systems?
+
+> A logical namespace owned by a single **database user** that contains and organizes database objects.
+
+In Oracle’s internal architecture:
+
+- A schema is not a standalone object type.
+- A schema is implicitly created when a user is created.
+- The schema name is identical to the username.
+- It exists as a logical container for objects owned by that user.
+
+> In Oracle Database, objects are uniquely ownership-bound to a single schema (forming disjoint ownership partitions), while cross-schema references introduce directed privilege and dependency edges that require explicit authorization, yielding a layered access/dependency graph rather than a hierarchical tree structure.
+
+There is not create schema.
+
+> In Oracle Database a schema is an ownership-bound logical namespace that is structurally inseparable from a database user (schema ≡ user and exists implicitly as the set of objects whose `OWNER` equals that user), whereas in systems like PostgreSQL and Microsoft SQL Server a schema is an independent, first-class namespace object decoupled from principals, allowing multiple schemas per user and explicit namespace-level authorization and resolution control.
 
 ## References
 

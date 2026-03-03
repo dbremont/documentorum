@@ -4,7 +4,7 @@
 
 ## Documentation Targets
 
-### Constitutive Technical Objects
+### (CTO) Constitutive Technical Objects
 
 * Platform
 * Framework
@@ -13,12 +13,12 @@
 * Operating System
 * …
 
-### Production Technical Objects
+### (PTO) Production Technical Objects
 
 * Text Editor
 * …
 
-### Operation
+### (OP) Operation
 
 * Procedures
 * ...

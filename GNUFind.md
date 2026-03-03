@@ -300,3 +300,4 @@ For each filesystem entry:
 - [Difference between find and GNU find](https://unix.stackexchange.com/questions/475020/difference-between-find-and-gnu-find)
 - [Find Source Code](https://github.com/aixoss/findutils/tree/r4.4.2-aix/find)
 - [fd](https://github.com/sharkdp/fd)
+- [A list of new(ish) command line tools](https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/)

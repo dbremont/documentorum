@@ -282,6 +282,16 @@ For each filesystem entry:
   - Execute action
   - If no explicit action → -print is implied
 
+## Alternative
+
+| Tool      | Traversal Model | Predicate Model         | Execution Model       |
+| --------- | --------------- | ----------------------- | --------------------- |
+| `find`    | DFS walk        | Boolean expression tree | Sequential evaluation |
+| `fd`      | Parallel walk   | Simplified filter model | Multithreaded         |
+| `ripgrep` | Parallel walk   | Content-focused         | Multithreaded         |
+| `bfs`     | Parallel walk   | GNU-compatible          | Optimized evaluator   |
+| `locate`  | Indexed lookup  | Name-only               | Database query        |
+
 ## References
 
 - [GNU Find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
@@ -289,3 +299,4 @@ For each filesystem entry:
 - [Findutils](https://www.gnu.org/software/findutils/)
 - [Difference between find and GNU find](https://unix.stackexchange.com/questions/475020/difference-between-find-and-gnu-find)
 - [Find Source Code](https://github.com/aixoss/findutils/tree/r4.4.2-aix/find)
+- [fd](https://github.com/sharkdp/fd)

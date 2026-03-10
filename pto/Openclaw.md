@@ -45,6 +45,12 @@
 
 > What is the **internal structure** of this technical object?
 
+## Dynamical Core
+
+> (Induced Dynamics) What types of dynamics are induced by the technical object? Which are the types of dynamics that can be trigger? What kinds of state-transformation processes can be triggered? or What does it do?
+
+> (Triggering) How are the dynamics trigger?  Which triggers are user-initiated, system-initiated, or externally induced?  Are triggers synchronous, asynchronous, event-driven, or continuous?
+
 ## Interaction
 
 > How does it interact with the `Environment`? How are the tools (or derived tools) triggered?

@@ -55,6 +55,10 @@
 
 > How does it interact with the `Environment`? How are the tools (or derived tools) triggered?
 
+## QA
+
+- Can OpenClaw take an environment that doesn’t expose an API (like a raw software GUI, a game, or even just images/screens) and make it interactionable by agents?
+
 ## References
 
 - [Openclaw](https://openclaw.ai/)

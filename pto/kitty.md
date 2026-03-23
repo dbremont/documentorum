@@ -29,7 +29,7 @@ The GUI organization model of the kitty terminal emulator is structured to enhan
 - **OS Window** is the main graphical interface encompassing all other kitty terminal components. It can include multiple tabs and be adjusted in size, transparency, and other window properties.
 - **Tab Bar**: Located at the top of the OS Window (unless configured otherwise), this area displays tabs representing a group of one or more kitty windows. Users can quickly switch between tabs to access different groups of terminal sessions.
 - **Tabs**: Each tab functions like a separate workspace, containing one or more kitty windows. Tabs help organize different tasks or projects by grouping related terminal sessions.
-- **Kitty Windows**: Within each tab, users can open multiple kitty windows, each an individual terminal session. The layout of these windows within a tab can be configured to be horizontal, vertical, stacked, or a grid, among other options.
+- **Kitty Windows (Pane)**: Within each tab, users can open multiple kitty windows, each an individual terminal session. The layout of these windows within a tab can be configured to be horizontal, vertical, stacked, or a grid, among other options.
 - **Layouts**: Kitty supports several layouts for organizing windows within a tab, including horizontal and vertical splits, which can be dynamically adjusted. Users can also create custom layouts tailored to their specific workflow needs.
 
 This model is designed to maximize productivity by allowing users to efficiently manage multiple tasks or projects through a combination of tabs and window layouts within a single OS Window.
@@ -59,3 +59,4 @@ enabled_layouts stack,tall
 ## References
 
 - [https://sw.kovidgoyal.net](https://sw.kovidgoyal.net/)
+- [kitty.conf](https://github.com/dbremont/configs/tree/main/global/config/kitty)

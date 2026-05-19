@@ -183,6 +183,8 @@ Without these, induced dynamics are limited to raw text editing.
 
 > ...
 
+### What is the relationship between Neovim and Tree-sitter?
+
 ## References
 
 - [vim](https://www.vim.org/)
@@ -203,3 +205,5 @@ Without these, induced dynamics are limited to raw text editing.
 - [Technical Object Topic Note Template](https://www.notion.so/Technical-Object-Topic-Note-Template-312c0f5171ec80aaa10dfcc2077d23ec?source=copy_link)
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [Neovim · Lua](https://neovim.io/doc/user/lua/)
+- [Tree-sitter](https://tree-sitter.github.io/tree-sitter/index.html)
+

@@ -1,5 +1,6 @@
 > **Visual Studio Code (VS Code)** is a popular open-source code editor developed by Microsoft. It’s built using web technologies such as HTML, CSS, and JavaScript and provides a wide range of features for developers.
-> 
+
+> **NOTE** (❌) : The used of this tool from (Sat Aug  8 02:00:02 PM AST 2026) - its ban for me. Replace it - with `Neovim`.
 
 ## Index
 

@@ -144,7 +144,7 @@ find
 
 ### Option Set
 
-| Category                  | Flag / Expression      | Description                                                      | Option set (If Any)                      |
+| Category                  | Flag      | Description                                                      | Option set (If Any)                      |
 | ------------------------- | ---------------------- | ---------------------------------------------------------------- | ---------------------------------------- |
 | **Traversal**             | `-H`                   | Follow symbolic links specified as starting points               | —                                        |
 | **Traversal**             | `-L`                   | Follow symbolic links during traversal                           | —                                        |

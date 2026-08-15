@@ -65,11 +65,71 @@ Canonical Interface Grammar:
 
 ```bash
 ## Grammar
-find [starting-path...] [expression]
+find [option]  [starting-path...] [expression...]
+
+expression
+    → (test | action | operator | group)*
 
 ## Sentence
 find /var/log -type f -name '*.log' -mtime -7 -print
 ```
+
+Complete Grammar:
+
+```g4
+<find-command> ::= "find"
+                   <global-option>*
+                   <starting-point>+
+                   <expression>*
+
+<global-option> ::= "-H"
+                  | "-L"
+                  | "-P"
+                  | "-D" <debug-options>
+                  | "-O" <optimization-level>
+
+<starting-point> ::= <pathname>
+
+<expression> ::= <primary>
+               | <operator>
+               | "(" <expression> ")"
+
+<primary> ::= <test>
+            | <action>
+
+<test> ::= <name-test>
+         | <path-test>
+         | <type-test>
+         | <permission-test>
+         | <ownership-test>
+         | <size-test>
+         | <time-test>
+         | <link-test>
+         | <filesystem-test>
+         | <content-test>
+         | <reference-test>
+         | <miscellaneous-test>
+
+<action> ::= "-print"
+           | "-print0"
+           | "-printf" <format>
+           | "-ls"
+           | "-delete"
+           | "-exec" <command> <exec-terminator>
+           | "-ok" <command> <exec-terminator>
+           | "-quit"
+
+<operator> ::= "-a"
+             | "-and"
+             | "-o"
+             | "-or"
+             | "!"
+             | "-not"
+
+<exec-terminator> ::= "\;"
+                      | "+"
+```
+
 
 ```text
 find

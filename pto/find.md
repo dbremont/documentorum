@@ -1,8 +1,10 @@
 # find
 
 > `find` is a command-line filesystem traversal and selection utility. It takes one or more starting points, traverses the corresponding filesystem hierarchy, evaluates an expression against each encountered filesystem object, and optionally performs an action on objects for which the expression evaluates to true.
+
 >
 > Conceptually, `find` exposes a small query-and-action language over the filesystem: **traversal domain → predicates → Boolean composition → actions**. Its interface therefore combines mechanisms that, in other systems, might be separated into a tree walker, metadata query API, expression language, and command executor.
+
 >
 > The exact capability set is implementation-dependent. The POSIX `find` utility defines a portable core, while GNU `findutils`, FreeBSD, and other UNIX implementations extend that core with additional predicates, traversal controls, actions, and formatting facilities.
 

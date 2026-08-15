@@ -143,62 +143,49 @@ find
 ````
 
 ### Option Set
-
-| Category                     | Flag / Expression      | Option set / capability                                   |
-| ---------------------------- | ---------------------- | --------------------------------------------------------- |
-| **Traversal**                | `-H`                   | Follow symbolic links specified as command-line arguments |
-| **Traversal**                | `-L`                   | Follow symbolic links during traversal                    |
-| **Traversal**                | `-P`                   | Never follow symbolic links; default                      |
-| **Traversal**                | `-depth`               | Process directory contents before the directory itself    |
-| **Traversal**                | `-maxdepth N`          | Limit traversal depth                                     |
-| **Traversal**                | `-mindepth N`          | Ignore objects above minimum depth                        |
-| **Traversal**                | `-xdev`, `-mount`      | Do not descend into other filesystems                     |
-| **Traversal**                | `-ignore_readdir_race` | Suppress certain errors caused by directory-entry races   |
-| **Name * Path Selection**    | `-name PATTERN`        | Match basename                                            |
-| **Name * Path Selection**    | `-iname PATTERN`       | Case-insensitive basename matching                        |
-| **Name * Path Selection**    | `-path PATTERN`        | Match complete path                                       |
-| **Name * Path Selection**    | `-ipath PATTERN`       | Case-insensitive path matching                            |
-| **Name * Path Selection**    | `-regex PATTERN`       | Match path using regular expression                       |
-| **Type Selection**           | `-type TYPE`           | Select by filesystem object type                          |
-| **Type Selection**           | `-xtype TYPE`          | Select by type after symlink resolution                   |
-| **Size Selection**           | `-size N`              | Select by file size                                       |
-| **Time Selection**           | `-mtime N`             | Select by modification time                               |
-| **Time Selection**           | `-atime N`             | Select by access time                                     |
-| **Time Selection**           | `-ctime N`             | Select by metadata-change time                            |
-| **Time Selection**           | `-mmin N`              | Select by modification time in minutes                    |
-| **Time Selection**           | `-amin N`              | Select by access time in minutes                          |
-| **Time Selection**           | `-cmin N`              | Select by metadata-change time in minutes                 |
-| **Ownership**                | `-user USER`           | Select by owner                                           |
-| **Ownership**                | `-group GROUP`         | Select by group                                           |
-| **Ownership**                | `-uid N`               | Select by numeric UID                                     |
-| **Ownership**                | `-gid N`               | Select by numeric GID                                     |
-| **Permissions**              | `-perm MODE`           | Select by permission bits                                 |
-| **Links**                    | `-links N`             | Select by link count                                      |
-| **Filesystem**               | `-fstype TYPE`         | Select by filesystem type                                 |
-| **Filesystem**               | `-inum N`              | Select by inode number                                    |
-| **Filesystem**               | `-samefile FILE`       | Select objects referring to same inode                    |
-| **Content * Attributes**     | `-empty`               | Select empty files/directories                            |
-| **Content * Attributes**     | `-readable`            | Select readable objects                                   |
-| **Content * Attributes**     | `-writable`            | Select writable objects                                   |
-| **Content * Attributes**     | `-executable`          | Select executable/searchable objects                      |
-| **Boolean Composition**      | `-a`, `-and`           | Logical AND                                               |
-| **Boolean Composition**      | `-o`, `-or`            | Logical OR                                                |
-| **Boolean Composition**      | `!`, `-not`            | Logical negation                                          |
-| **Boolean Composition**      | `\( ... \)`            | Group expressions                                         |
-| **Actions**                  | `-print`               | Print pathname                                            |
-| **Actions**                  | `-print0`              | Print pathname with NUL terminator                        |
-| **Actions**                  | `-printf FORMAT`       | Formatted output                                          |
-| **Actions**                  | `-ls`                  | Display `ls`-style information                            |
-| **Actions**                  | `-delete`              | Delete selected objects                                   |
-| **Actions**                  | `-exec COMMAND ... \;` | Execute command for each match                            |
-| **Actions**                  | `-exec COMMAND ... +`  | Execute command with batches of matches                   |
-| **Actions**                  | `-ok COMMAND ... \;`   | Execute command with confirmation                         |
-| **Actions**                  | `-quit`                | Terminate traversal                                       |
-| **Existence * Relationship** | `-exists`              | Select objects that exist                                 |
-| **Reference Comparison**     | `-newer FILE`          | Newer than reference file                                 |
-| **Reference Comparison**     | `-newermt DATE`        | Newer than specified timestamp                            |
-| **Reference Comparison**     | `-anewer FILE`         | Access time newer than reference                          |
-| **Reference Comparison**     | `-cnewer FILE`         | Status-change time newer than reference                   |
+| Category                  | Flag / Expression      | Description                                            | Option set (If Any)                      |
+| ------------------------- | ---------------------- | ------------------------------------------------------ | ---------------------------------------- |
+| **Traversal**             | `-H`                   | Follow symbolic links specified as starting points     | —                                        |
+| **Traversal**             | `-L`                   | Follow symbolic links during traversal                 | —                                        |
+| **Traversal**             | `-P`                   | Never follow symbolic links; default                   | —                                        |
+| **Traversal**             | `-depth`               | Process directory contents before the directory itself | —                                        |
+| **Traversal**             | `-maxdepth N`          | Limit traversal depth                                  | `N ∈ ℕ`                                  |
+| **Traversal**             | `-mindepth N`          | Ignore objects above minimum depth                     | `N ∈ ℕ`                                  |
+| **Traversal**             | `-xdev` / `-mount`     | Do not descend into other filesystems                  | —                                        |
+| **Traversal**             | `-ignore_readdir_race` | Suppress certain directory-entry race errors           | —                                        |
+| **Name / Path Selection** | `-name PATTERN`        | Match basename                                         | Shell-style pattern                      |
+| **Name / Path Selection** | `-iname PATTERN`       | Case-insensitive basename match                        | Shell-style pattern                      |
+| **Name / Path Selection** | `-path PATTERN`        | Match complete pathname                                | Shell-style pattern                      |
+| **Name / Path Selection** | `-ipath PATTERN`       | Case-insensitive pathname match                        | Shell-style pattern                      |
+| **Name / Path Selection** | `-regex PATTERN`       | Match pathname against regular expression              | Regular expression                       |
+| **Type Selection**        | `-type TYPE`           | Select by filesystem object type                       | `b c d p f l s D`*                       |
+| **Type Selection**        | `-xtype TYPE`          | Select by type after symbolic-link resolution          | `b c d p f l s D`*                       |
+| **Size Selection**        | `-size N`              | Select by file size                                    | Numeric value + unit + comparison prefix |
+| **Time Selection**        | `-mtime N`             | Select by modification age in days                     | `+N`, `N`, `-N`                          |
+| **Time Selection**        | `-atime N`             | Select by access age in days                           | `+N`, `N`, `-N`                          |
+| **Time Selection**        | `-ctime N`             | Select by status-change age in days                    | `+N`, `N`, `-N`                          |
+| **Time Selection**        | `-mmin N`              | Select by modification age in minutes                  | `+N`, `N`, `-N`                          |
+| **Time Selection**        | `-amin N`              | Select by access age in minutes                        | `+N`, `N`, `-N`                          |
+| **Time Selection**        | `-cmin N`              | Select by status-change age in minutes                 | `+N`, `N`, `-N`                          |
+| **Ownership**             | `-user USER`           | Select by username                                     | User name                                |
+| **Ownership**             | `-group GROUP`         | Select by group name                                   | Group name                               |
+| **Ownership**             | `-uid N`               | Select by numeric user ID                              | `N ∈ ℕ`                                  |
+| **Ownership**             | `-gid N`               | Select by numeric group ID                             | `N ∈ ℕ`                                  |
+| **Permissions**           | `-perm MODE`           | Select by permission bits                              | Permission mode                          |
+| **Links**                 | `-links N`             | Select by hard-link count                              | `+N`, `N`, `-N`                          |
+| **Filesystem**            | `-fstype TYPE`         | Select by filesystem type                              | Filesystem type                          |
+| **Filesystem**            | `-inum N`              | Select by inode number                                 | `N ∈ ℕ`                                  |
+| **Filesystem**            | `-samefile FILE`       | Select objects referring to same inode                 | Pathname                                 |
+| **Content / Attributes**  | `-empty`               | Select empty files/directories                         | —                                        |
+| **Content / Attributes**  | `-readable`            | Select objects readable by current user                | —                                        |
+| **Content / Attributes**  | `-writable`            | Select objects writable by current user                | —                                        |
+| **Content / Attributes**  | `-executable`          | Select executable/searchable objects                   | —                                        |
+| **Boolean Composition**   | `-a` / `-and`          | Logical conjunction                                    | —                                        |
+| **Boolean Composition**   | `-o` / `-or`           | Logical disjunction                                    | —                                        |
+| **Boolean Composition**   | `!` / `-not`           | Logical negation                                       | Expression                               |
+| **Boolean Composition**   | `\( EXPRESSION \)`     | Group expression                                       | Expression                               |
+| **Actions**               | `-print`               | Print pathname                                         | —                                        |
+| **Actions**               | `-pri                  |                                                        |                                          |
 
 ## References
 
